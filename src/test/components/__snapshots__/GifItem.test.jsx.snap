@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GifItem/> Probar snapshot 1`] = `
+<div>
+  <div
+    class="MuiGrid2-root MuiGrid2-direction-xs-row css-27y2fm-MuiGrid2-root"
+  >
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1c7tbn2-MuiPaper-root-MuiCard-root"
+    >
+      <img
+        alt="Tigre"
+        class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-ugtnad-MuiCardMedia-root"
+        src="https://tigre.com/tigre.jpg"
+      />
+      <div
+        class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap css-z1doim-MuiTypography-root"
+        >
+          Tigre
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
