@@ -9,6 +9,10 @@ describe("pruebas en <addCategory/>", () => {
     fireEvent.input(inputElement, { target: { value: "saitama" } });
 
     expect(inputElement.value).toBe("saitama");
-    screen.debug();
+    
+  });
+  it('debe llamar el onNewCategory si el input tiene un valor', () => {
+    const inputValue = "saitama";
+    // TODO: ???
   });
 });
