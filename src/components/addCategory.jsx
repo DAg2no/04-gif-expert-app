@@ -10,8 +10,8 @@ export const AddCategory = ({ onNewCategory }) => {
     }
 
     const onSubmit = ( event ) => {
-        event.preventDefault();
-        if( inputValue.trim().length <= 1) return;
+        event.preventDefault(); // para que no se recarge la pagina
+        if( inputValue.trim().length <= 1) return; // si se ingresa un mayor a 1, se aprueba
 
         // setCategories( categories => [ inputValue, ...categories ]);
         setInputValue('');
@@ -19,16 +19,18 @@ export const AddCategory = ({ onNewCategory }) => {
     }
 
     return (
-        <form onSubmit={ onSubmit }>
+        <form onSubmit={ onSubmit } aria-label='form'> {/* capturando el formulario con label */}
             <input 
-                type="text"
-                placeholder="Buscar gifs"
-                value={ inputValue }
-                onChange={ onInputChange }
+                type="text" // input de tipo texto
+                placeholder="Buscar gifs" // lo que se mostrara en la input
+                value={ inputValue } // valor de la input
+                onChange={ onInputChange } // para enviar el valor
             />
         </form>
     )
 }
+
+// propTypes
 AddCategory.propTypes = {
     onNewCategory: PropTypes.func.isRequired
 }
